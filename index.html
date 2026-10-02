@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body class="noselect">
+    <div class="video-container">
+        <video id="bg-video" autoplay muted loop playsinline preload="auto"></video>
+    </div>
+    <div class="overlay"></div>
+
+    <button id="sound-toggle" aria-label="Toggle sound" title="Toggle sound"></button>
+
+    <div id="progress-wrap">
+        <div id="progress-info">
+            <span id="progress-label">LOADING</span>
+            <span id="progress-pct">0%</span>
+        </div>
+        <div id="progress-track">
+            <div id="progress-fill"><div id="progress-shine"></div></div>
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
